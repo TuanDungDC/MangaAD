@@ -1,0 +1,6 @@
+framework module Pods_MangaAD_MangaADUITests {
+  umbrella header "Pods-MangaAD-MangaADUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
