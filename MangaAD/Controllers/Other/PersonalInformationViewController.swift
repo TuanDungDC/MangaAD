@@ -11,7 +11,7 @@ import FirebaseDatabase
 import FirebaseStorage
 import SDWebImage
 
-class PersonalInformationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PersonalInformationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     var onDismiss: (() -> Void)?
     
@@ -105,6 +105,10 @@ class PersonalInformationViewController: UIViewController, UIImagePickerControll
         view.backgroundColor = UIColor(red: 0x0B / 255.0, green: 0x0F / 255.0, blue: 0x2F / 255.0, alpha: 1)
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(didTapBackButton))
         navigationItem.leftBarButtonItem?.tintColor = .white
+        //
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+        nameUserTextField.delegate = self
         addSubView()
         addConstraints()
         fetchData()
@@ -158,7 +162,7 @@ class PersonalInformationViewController: UIViewController, UIImagePickerControll
             return
         }
         let ref = Database.database().reference().child("Users").child(uid)
-        ref.observeSingleEvent(of: .value) { [weak self] snapshot in
+        ref.observe(.value) { [weak self] snapshot in
             guard let self = self,
                   let value = snapshot.value as? NSDictionary,
                   let name = value["name"] as? String,
@@ -198,7 +202,7 @@ class PersonalInformationViewController: UIViewController, UIImagePickerControll
                 print("Error updating name: \(error)")
                 return
             }
-            let ac = UIAlertController(title: "Thành công", message: "Mật khẩu đã được đổi thành công.", preferredStyle: .alert)
+            let ac = UIAlertController(title: "Thành công", message: "Tên người dùng đã được đổi thành công.", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(ac, animated: true)
             sender.backgroundColor = originalColor
@@ -295,6 +299,25 @@ class PersonalInformationViewController: UIViewController, UIImagePickerControll
         
         // Hiển thị cảnh báo
         present(alert, animated: true)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.layer.borderColor = UIColor.blue.cgColor
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.layer.borderColor = UIColor.white.cgColor
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == nameUserTextField {
+            textField.resignFirstResponder()
+        }
+        return true
     }
     
     @objc func didTapBackButton() {

@@ -39,48 +39,12 @@ class MangaCollectionViewController: UICollectionViewController {
         self.collectionView!.register(MangaCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         // Do any additional setup after loading the view.
-//        fetchMangaFromFirebase()
         // Tải trang đầu tiên
         loadMoreData()
         //
         filteredManga = listManga
     }
     
-//    func fetchMangaFromFirebase() {
-//        let ref = Database.database().reference().child("Comic")
-//        ref.observeSingleEvent(of: .value, with: { snapshot in
-//            var newlistManga: [Manga] = []
-//            for child in snapshot.children {
-//                if let childSnapshot = child as? DataSnapshot,
-//                   let dict = childSnapshot.value as? [String: Any],
-//                   let name = dict["Name"] as? String,
-//                   let image = dict["Image"] as? String,
-//                   let category = dict["Category"] as? String,
-//                   let description = dict["Description"] as? String,
-//                   let chaptersArray = dict["Chapters"] as? [[String: Any]],
-//                   let author = dict["Author"] as? String,
-//                   let backdrop = dict["Backdrop"] as? String {
-//                    
-//                    // Tạo danh sách các Chapter
-//                    var chapters: [Chapter] = []
-//                    for chapterDict in chaptersArray {
-//                        if let links = chapterDict["Links"] as? [String],
-//                           let chapterName = chapterDict["Name"] as? String {
-//                            let chapter = Chapter(Links: links, Name: chapterName)
-//                            chapters.append(chapter)
-//                        }
-//                    }
-//                    
-//                    // Tạo một Manga mới với danh sách Chapter
-//                    let manga = Manga(Name: name, Image: image, Category: category, Description: description, Chapters: chapters, Author: author, Backdrop: backdrop, Rate: "")
-//                    newlistManga.append(manga)
-//                }
-//            }
-//            DispatchQueue.main.async {
-//                self.updateMangaList(newlistManga)
-//            }
-//        })
-//    }
     
     func fetchMangaFromFirebase(page: Int, completion: @escaping ([Manga]) -> Void) {
         let ref = Database.database().reference().child("Comic")
@@ -192,9 +156,6 @@ class MangaCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let mangaDetailVC = MangaDetailViewController()
-//        mangaDetailVC.onDismiss = { [weak self] in
-//            self?.fetchMangaFromFirebase()
-//        }
         mangaDetailVC.manga = filteredManga[indexPath.row]
         let naVC = UINavigationController(rootViewController: mangaDetailVC)
         naVC.modalPresentationStyle = .fullScreen

@@ -131,7 +131,7 @@ class ProfileViewController: UIViewController {
             return
         }
         let ref = Database.database().reference().child("Users").child(uid)
-        ref.observeSingleEvent(of: .value) { [weak self] snapshot in
+        ref.observe(.value) { [weak self] snapshot in
             guard let self = self,
                   let value = snapshot.value as? NSDictionary,
                   let name = value["name"] as? String,
@@ -185,7 +185,6 @@ class ProfileViewController: UIViewController {
         let perVC = PersonalInformationViewController()
         perVC.onDismiss = { [weak self] in
             sender.backgroundColor = originalColor
-            self?.fetchData()
         }
         let naVC = UINavigationController(rootViewController: perVC)
         naVC.modalPresentationStyle = .fullScreen
@@ -199,7 +198,6 @@ class ProfileViewController: UIViewController {
         let changePasswordVC = ChangePasswordViewController()
         changePasswordVC.onDismiss = { [weak self] in
             sender.backgroundColor = originalColor
-            self?.fetchData()
         }
         let naVC = UINavigationController(rootViewController: changePasswordVC)
         naVC.modalPresentationStyle = .fullScreen

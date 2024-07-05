@@ -272,17 +272,12 @@ class MangaDetailViewController: UIViewController {
     }
     
     @objc func didTapBackButton() {
-        self.dismiss(animated: true) {
-            self.onDismiss?()
-        }
+        self.dismiss(animated: true)
     }
     
     @objc func didTapChatComment() {
         let reviewsVC = MangaReviewsViewController()
         reviewsVC.manga = manga
-        reviewsVC.onDismiss = { [weak self] in
-            self?.fetchRatingsAndCalculateAverage()
-        }
         let naVC = UINavigationController(rootViewController: reviewsVC)
         naVC.modalPresentationStyle = .fullScreen
         present(naVC, animated: true)
@@ -437,7 +432,6 @@ class MangaDetailViewController: UIViewController {
             DispatchQueue.main.async {
                 self?.rateButton.isSelected = true
                 self?.dismiss(animated: true)
-                self?.fetchRatingsAndCalculateAverage()
             }
         }
         
@@ -458,8 +452,8 @@ class MangaDetailViewController: UIViewController {
     func fetchRatingsAndCalculateAverage() {
         let ratingsRef = Database.database().reference(withPath: "Ratings")
         
-        // Lấy dữ liệu
-        ratingsRef.observeSingleEvent(of: .value, with: { snapshot in
+        // Lấy dữ liệu sử dụng observe để lắng nghe mỗi lần dữ liệu thay đổi
+        ratingsRef.observe(.value, with: { snapshot in
             var mangaRatings: [String: [Double]] = [:]
             
             // Duyệt qua tất cả các ratings

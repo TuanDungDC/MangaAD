@@ -53,7 +53,7 @@ class MangaReviewsViewController: UIViewController, UICollectionViewDataSource, 
         let ratingsRef = Database.database().reference(withPath: "Ratings")
         
         // Lấy dữ liệu
-        ratingsRef.observeSingleEvent(of: .value, with: { snapshot in
+        ratingsRef.observe(.value, with: { snapshot in
             var mangaRatings: [String: [[String: Any]]] = [:] // Sửa lại thành dictionary với key là String và value là mảng của dictionary
             var newRatings: [Rating] = []
             

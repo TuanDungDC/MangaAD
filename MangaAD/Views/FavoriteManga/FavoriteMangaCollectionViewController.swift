@@ -32,11 +32,7 @@ class FavoriteMangaCollectionViewController: UICollectionViewController {
         collectionView.showsVerticalScrollIndicator = false
         // Register cell classes
         self.collectionView!.register(FavoriteMangaCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-    }
-    
-    // Sử dụng viewWillAppear để tải dữ liệu (thường xuyên thay đổi) để cập nhật mỗi khi quay về view
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        // fetch dữ liệu
         fetchFavoritesFromFirebase()
         fetchRatingsAndCalculateAverage()
     }
@@ -45,7 +41,7 @@ class FavoriteMangaCollectionViewController: UICollectionViewController {
         guard let userID = Auth.auth().currentUser?.uid else { return }
         let ref = Database.database().reference(withPath: "Favorite").child(userID)
         
-        ref.observeSingleEvent(of: .value, with: { snapshot in
+        ref.observe(.value, with: { snapshot in
             var newFavoriteManga: [Manga] = []
             
             // Ensure the snapshot contains a dictionary
@@ -90,7 +86,7 @@ class FavoriteMangaCollectionViewController: UICollectionViewController {
         let ratingsRef = Database.database().reference(withPath: "Ratings")
         
         // Lấy dữ liệu
-        ratingsRef.observeSingleEvent(of: .value, with: { snapshot in
+        ratingsRef.observe(.value, with: { snapshot in
             var mangaRatings: [String: [Double]] = [:]
             
             // Duyệt qua tất cả các ratings
@@ -170,10 +166,6 @@ class FavoriteMangaCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Item at \(indexPath.row) selected")
         let mangaDetailVC = MangaDetailViewController()
-        mangaDetailVC.onDismiss = { [weak self] in
-            self?.fetchFavoritesFromFirebase()
-            self?.fetchRatingsAndCalculateAverage()
-        }
         mangaDetailVC.manga = listManga[indexPath.row]
         let naVC = UINavigationController(rootViewController: mangaDetailVC)
         naVC.modalPresentationStyle = .fullScreen
