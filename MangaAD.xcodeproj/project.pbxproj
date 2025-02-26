@@ -1,0 +1,935 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18151E962C148DE100BF0580 /* MangaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151E952C148DE100BF0580 /* MangaDetailViewController.swift */; };
+		18151E982C1493E000BF0580 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151E972C1493E000BF0580 /* TabBarViewController.swift */; };
+		18151E9A2C14943E00BF0580 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151E992C14943E00BF0580 /* FavoriteViewController.swift */; };
+		18151E9C2C14944900BF0580 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151E9B2C14944900BF0580 /* CategoryViewController.swift */; };
+		18151E9E2C14945500BF0580 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151E9D2C14945500BF0580 /* ProfileViewController.swift */; };
+		18151EA02C14A24A00BF0580 /* ChapterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151E9F2C14A24A00BF0580 /* ChapterListViewController.swift */; };
+		18151EA22C14A53700BF0580 /* ChapterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151EA12C14A53700BF0580 /* ChapterDetailViewController.swift */; };
+		18151EA42C14BE7E00BF0580 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151EA32C14BE7E00BF0580 /* Category.swift */; };
+		18151EB02C14DC7F00BF0580 /* FavoriteMangaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151EAF2C14DC7F00BF0580 /* FavoriteMangaCollectionViewController.swift */; };
+		18151EB22C14DC8B00BF0580 /* FavoriteMangaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151EB12C14DC8B00BF0580 /* FavoriteMangaCollectionViewCell.swift */; };
+		18151EB62C14F4D300BF0580 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151EB52C14F4D300BF0580 /* Favorite.swift */; };
+		187880F02C0B58E6006CCE6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 187880EF2C0B58E6006CCE6B /* GoogleService-Info.plist */; };
+		187880F92C0B5EDF006CCE6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187880F82C0B5EDF006CCE6B /* LoginViewController.swift */; };
+		187880FB2C0B5F0A006CCE6B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187880FA2C0B5F0A006CCE6B /* RegisterViewController.swift */; };
+		187880FD2C0B7BF8006CCE6B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187880FC2C0B7BF8006CCE6B /* User.swift */; };
+		187880FF2C0B94BD006CCE6B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187880FE2C0B94BD006CCE6B /* ForgotPasswordViewController.swift */; };
+		187881022C0B9802006CCE6B /* MangaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187881012C0B9802006CCE6B /* MangaCollectionViewController.swift */; };
+		187881042C0B980E006CCE6B /* MangaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187881032C0B980E006CCE6B /* MangaCollectionViewCell.swift */; };
+		187881062C0B9905006CCE6B /* Manga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187881052C0B9905006CCE6B /* Manga.swift */; };
+		187881082C0BA2BF006CCE6B /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187881072C0BA2BF006CCE6B /* Chapter.swift */; };
+		18AAEAF52C0747CF00A28655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAEAF42C0747CF00A28655 /* AppDelegate.swift */; };
+		18AAEAF72C0747CF00A28655 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAEAF62C0747CF00A28655 /* SceneDelegate.swift */; };
+		18AAEAF92C0747CF00A28655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAEAF82C0747CF00A28655 /* ViewController.swift */; };
+		18AAEAFE2C0747D100A28655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AAEAFD2C0747D100A28655 /* Assets.xcassets */; };
+		18AAEB0C2C0747D200A28655 /* MangaADTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAEB0B2C0747D200A28655 /* MangaADTests.swift */; };
+		18AAEB162C0747D200A28655 /* MangaADUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAEB152C0747D200A28655 /* MangaADUITests.swift */; };
+		18AAEB182C0747D200A28655 /* MangaADUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAEB172C0747D200A28655 /* MangaADUITestsLaunchTests.swift */; };
+		18D115972C161E7E0052C1EE /* PersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D115962C161E7E0052C1EE /* PersonalInformationViewController.swift */; };
+		18DD503D2D64FE2700F21417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DD503C2D64FE2700F21417 /* LaunchScreen.storyboard */; };
+		18E682472C1868F600AC33D8 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E682462C1868F600AC33D8 /* ChangePasswordViewController.swift */; };
+		18E69C992C2EDBF0006F5476 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E69C982C2EDBF0006F5476 /* LaunchScreenViewController.swift */; };
+		18F1ADCD2C1B210400CB0140 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1ADCC2C1B210400CB0140 /* Rating.swift */; };
+		18F1ADD02C1B284200CB0140 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1ADCF2C1B284200CB0140 /* RatingView.swift */; };
+		18F1ADD22C1B61A700CB0140 /* MangaReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1ADD12C1B61A700CB0140 /* MangaReviewsViewController.swift */; };
+		22CA073B2867932CF748EFEE /* Pods_MangaAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4FEBAE9B9F1F552CD4B36D /* Pods_MangaAD.framework */; };
+		729C80C4F7CE240AE289A8B2 /* Pods_MangaADTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DF88C9606806ECD81E5128 /* Pods_MangaADTests.framework */; };
+		E530FFFF5625E14E8A1F2D96 /* Pods_MangaAD_MangaADUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ADE77CECFD315CDACA2F68 /* Pods_MangaAD_MangaADUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18AAEB082C0747D200A28655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18AAEAE92C0747CF00A28655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18AAEAF02C0747CF00A28655;
+			remoteInfo = MangaAD;
+		};
+		18AAEB122C0747D200A28655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18AAEAE92C0747CF00A28655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18AAEAF02C0747CF00A28655;
+			remoteInfo = MangaAD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C81C8AF85B67B3E8A1DCAE /* Pods-MangaAD-MangaADUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaAD-MangaADUITests.debug.xcconfig"; path = "Target Support Files/Pods-MangaAD-MangaADUITests/Pods-MangaAD-MangaADUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		12125FC75FF796FBFD6B1978 /* Pods-MangaAD-MangaADUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaAD-MangaADUITests.release.xcconfig"; path = "Target Support Files/Pods-MangaAD-MangaADUITests/Pods-MangaAD-MangaADUITests.release.xcconfig"; sourceTree = "<group>"; };
+		18151E952C148DE100BF0580 /* MangaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDetailViewController.swift; sourceTree = "<group>"; };
+		18151E972C1493E000BF0580 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		18151E992C14943E00BF0580 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		18151E9B2C14944900BF0580 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		18151E9D2C14945500BF0580 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		18151E9F2C14A24A00BF0580 /* ChapterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListViewController.swift; sourceTree = "<group>"; };
+		18151EA12C14A53700BF0580 /* ChapterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailViewController.swift; sourceTree = "<group>"; };
+		18151EA32C14BE7E00BF0580 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		18151EAF2C14DC7F00BF0580 /* FavoriteMangaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMangaCollectionViewController.swift; sourceTree = "<group>"; };
+		18151EB12C14DC8B00BF0580 /* FavoriteMangaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMangaCollectionViewCell.swift; sourceTree = "<group>"; };
+		18151EB52C14F4D300BF0580 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		187880EF2C0B58E6006CCE6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		187880F82C0B5EDF006CCE6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		187880FA2C0B5F0A006CCE6B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		187880FC2C0B7BF8006CCE6B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		187880FE2C0B94BD006CCE6B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		187881012C0B9802006CCE6B /* MangaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaCollectionViewController.swift; sourceTree = "<group>"; };
+		187881032C0B980E006CCE6B /* MangaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaCollectionViewCell.swift; sourceTree = "<group>"; };
+		187881052C0B9905006CCE6B /* Manga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manga.swift; sourceTree = "<group>"; };
+		187881072C0BA2BF006CCE6B /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		18AAEAF12C0747CF00A28655 /* MangaAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AAEAF42C0747CF00A28655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18AAEAF62C0747CF00A28655 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18AAEAF82C0747CF00A28655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18AAEAFD2C0747D100A28655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18AAEB022C0747D100A28655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AAEB072C0747D200A28655 /* MangaADTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangaADTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AAEB0B2C0747D200A28655 /* MangaADTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaADTests.swift; sourceTree = "<group>"; };
+		18AAEB112C0747D200A28655 /* MangaADUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangaADUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AAEB152C0747D200A28655 /* MangaADUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaADUITests.swift; sourceTree = "<group>"; };
+		18AAEB172C0747D200A28655 /* MangaADUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaADUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18D115962C161E7E0052C1EE /* PersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformationViewController.swift; sourceTree = "<group>"; };
+		18DD503C2D64FE2700F21417 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18E682462C1868F600AC33D8 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		18E69C982C2EDBF0006F5476 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		18F1ADCC2C1B210400CB0140 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		18F1ADCF2C1B284200CB0140 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		18F1ADD12C1B61A700CB0140 /* MangaReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaReviewsViewController.swift; sourceTree = "<group>"; };
+		50542CE225F71B43B20A5491 /* Pods-MangaADTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaADTests.release.xcconfig"; path = "Target Support Files/Pods-MangaADTests/Pods-MangaADTests.release.xcconfig"; sourceTree = "<group>"; };
+		53ADE77CECFD315CDACA2F68 /* Pods_MangaAD_MangaADUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangaAD_MangaADUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57296BF353607404B304386C /* Pods-MangaAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaAD.release.xcconfig"; path = "Target Support Files/Pods-MangaAD/Pods-MangaAD.release.xcconfig"; sourceTree = "<group>"; };
+		6E12388589D084C47C40D81F /* Pods-MangaAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaAD.debug.xcconfig"; path = "Target Support Files/Pods-MangaAD/Pods-MangaAD.debug.xcconfig"; sourceTree = "<group>"; };
+		85DF88C9606806ECD81E5128 /* Pods_MangaADTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangaADTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7A3D1B92457E00014A147D /* Pods-MangaADTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaADTests.debug.xcconfig"; path = "Target Support Files/Pods-MangaADTests/Pods-MangaADTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC4FEBAE9B9F1F552CD4B36D /* Pods_MangaAD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangaAD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18AAEAEE2C0747CF00A28655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CA073B2867932CF748EFEE /* Pods_MangaAD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AAEB042C0747D200A28655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729C80C4F7CE240AE289A8B2 /* Pods_MangaADTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AAEB0E2C0747D200A28655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E530FFFF5625E14E8A1F2D96 /* Pods_MangaAD_MangaADUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18151E942C148DB100BF0580 /* Manga */ = {
+			isa = PBXGroup;
+			children = (
+				18151E952C148DE100BF0580 /* MangaDetailViewController.swift */,
+				18151E9F2C14A24A00BF0580 /* ChapterListViewController.swift */,
+				18151EA12C14A53700BF0580 /* ChapterDetailViewController.swift */,
+				18F1ADD12C1B61A700CB0140 /* MangaReviewsViewController.swift */,
+			);
+			path = Manga;
+			sourceTree = "<group>";
+		};
+		18151EAE2C14DC4D00BF0580 /* FavoriteManga */ = {
+			isa = PBXGroup;
+			children = (
+				18151EAF2C14DC7F00BF0580 /* FavoriteMangaCollectionViewController.swift */,
+				18151EB12C14DC8B00BF0580 /* FavoriteMangaCollectionViewCell.swift */,
+			);
+			path = FavoriteManga;
+			sourceTree = "<group>";
+		};
+		187880F12C0B5D76006CCE6B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18151E942C148DB100BF0580 /* Manga */,
+				187880F32C0B5D85006CCE6B /* Other */,
+				187880F22C0B5D7E006CCE6B /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		187880F22C0B5D7E006CCE6B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18AAEAF82C0747CF00A28655 /* ViewController.swift */,
+				18151E992C14943E00BF0580 /* FavoriteViewController.swift */,
+				18151E9B2C14944900BF0580 /* CategoryViewController.swift */,
+				18151E9D2C14945500BF0580 /* ProfileViewController.swift */,
+				18151E972C1493E000BF0580 /* TabBarViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		187880F32C0B5D85006CCE6B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				187880F82C0B5EDF006CCE6B /* LoginViewController.swift */,
+				187880FA2C0B5F0A006CCE6B /* RegisterViewController.swift */,
+				187880FE2C0B94BD006CCE6B /* ForgotPasswordViewController.swift */,
+				18D115962C161E7E0052C1EE /* PersonalInformationViewController.swift */,
+				18E682462C1868F600AC33D8 /* ChangePasswordViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		187880F62C0B5EB2006CCE6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				187880FC2C0B7BF8006CCE6B /* User.swift */,
+				187881052C0B9905006CCE6B /* Manga.swift */,
+				187881072C0BA2BF006CCE6B /* Chapter.swift */,
+				18151EA32C14BE7E00BF0580 /* Category.swift */,
+				18151EB52C14F4D300BF0580 /* Favorite.swift */,
+				18F1ADCC2C1B210400CB0140 /* Rating.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		187880F72C0B5EB7006CCE6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18E69C952C2EC9BB006F5476 /* LaunchScreen */,
+				18F1ADCE2C1B282C00CB0140 /* Rating */,
+				18151EAE2C14DC4D00BF0580 /* FavoriteManga */,
+				187881002C0B9775006CCE6B /* Manga */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		187881002C0B9775006CCE6B /* Manga */ = {
+			isa = PBXGroup;
+			children = (
+				187881012C0B9802006CCE6B /* MangaCollectionViewController.swift */,
+				187881032C0B980E006CCE6B /* MangaCollectionViewCell.swift */,
+			);
+			path = Manga;
+			sourceTree = "<group>";
+		};
+		18AAEAE82C0747CF00A28655 = {
+			isa = PBXGroup;
+			children = (
+				18AAEAF32C0747CF00A28655 /* MangaAD */,
+				18AAEB0A2C0747D200A28655 /* MangaADTests */,
+				18AAEB142C0747D200A28655 /* MangaADUITests */,
+				18AAEAF22C0747CF00A28655 /* Products */,
+				2CDEE31A9BD58684C9F1E28F /* Pods */,
+				3FB1CC07344AB0BBCC46A518 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18AAEAF22C0747CF00A28655 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18AAEAF12C0747CF00A28655 /* MangaAD.app */,
+				18AAEB072C0747D200A28655 /* MangaADTests.xctest */,
+				18AAEB112C0747D200A28655 /* MangaADUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18AAEAF32C0747CF00A28655 /* MangaAD */ = {
+			isa = PBXGroup;
+			children = (
+				187880F72C0B5EB7006CCE6B /* Views */,
+				187880F62C0B5EB2006CCE6B /* Models */,
+				187880F12C0B5D76006CCE6B /* Controllers */,
+				18AAEB242C0749C100A28655 /* Resources */,
+				18AAEB022C0747D100A28655 /* Info.plist */,
+			);
+			path = MangaAD;
+			sourceTree = "<group>";
+		};
+		18AAEB0A2C0747D200A28655 /* MangaADTests */ = {
+			isa = PBXGroup;
+			children = (
+				18AAEB0B2C0747D200A28655 /* MangaADTests.swift */,
+			);
+			path = MangaADTests;
+			sourceTree = "<group>";
+		};
+		18AAEB142C0747D200A28655 /* MangaADUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18AAEB152C0747D200A28655 /* MangaADUITests.swift */,
+				18AAEB172C0747D200A28655 /* MangaADUITestsLaunchTests.swift */,
+			);
+			path = MangaADUITests;
+			sourceTree = "<group>";
+		};
+		18AAEB242C0749C100A28655 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				187880EF2C0B58E6006CCE6B /* GoogleService-Info.plist */,
+				18AAEAF42C0747CF00A28655 /* AppDelegate.swift */,
+				18AAEAF62C0747CF00A28655 /* SceneDelegate.swift */,
+				18AAEAFD2C0747D100A28655 /* Assets.xcassets */,
+				18DD503C2D64FE2700F21417 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18E69C952C2EC9BB006F5476 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				18E69C982C2EDBF0006F5476 /* LaunchScreenViewController.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		18F1ADCE2C1B282C00CB0140 /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				18F1ADCF2C1B284200CB0140 /* RatingView.swift */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
+		2CDEE31A9BD58684C9F1E28F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E12388589D084C47C40D81F /* Pods-MangaAD.debug.xcconfig */,
+				57296BF353607404B304386C /* Pods-MangaAD.release.xcconfig */,
+				05C81C8AF85B67B3E8A1DCAE /* Pods-MangaAD-MangaADUITests.debug.xcconfig */,
+				12125FC75FF796FBFD6B1978 /* Pods-MangaAD-MangaADUITests.release.xcconfig */,
+				BA7A3D1B92457E00014A147D /* Pods-MangaADTests.debug.xcconfig */,
+				50542CE225F71B43B20A5491 /* Pods-MangaADTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3FB1CC07344AB0BBCC46A518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC4FEBAE9B9F1F552CD4B36D /* Pods_MangaAD.framework */,
+				53ADE77CECFD315CDACA2F68 /* Pods_MangaAD_MangaADUITests.framework */,
+				85DF88C9606806ECD81E5128 /* Pods_MangaADTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18AAEAF02C0747CF00A28655 /* MangaAD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AAEB1B2C0747D200A28655 /* Build configuration list for PBXNativeTarget "MangaAD" */;
+			buildPhases = (
+				F47B18070485462B2E03ACB0 /* [CP] Check Pods Manifest.lock */,
+				18AAEAED2C0747CF00A28655 /* Sources */,
+				18AAEAEE2C0747CF00A28655 /* Frameworks */,
+				18AAEAEF2C0747CF00A28655 /* Resources */,
+				DAAA3D42B730882063A8E59C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MangaAD;
+			productName = MangaAD;
+			productReference = 18AAEAF12C0747CF00A28655 /* MangaAD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18AAEB062C0747D200A28655 /* MangaADTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AAEB1E2C0747D200A28655 /* Build configuration list for PBXNativeTarget "MangaADTests" */;
+			buildPhases = (
+				E1F54FF075A9C8276703BD35 /* [CP] Check Pods Manifest.lock */,
+				18AAEB032C0747D200A28655 /* Sources */,
+				18AAEB042C0747D200A28655 /* Frameworks */,
+				18AAEB052C0747D200A28655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18AAEB092C0747D200A28655 /* PBXTargetDependency */,
+			);
+			name = MangaADTests;
+			productName = MangaADTests;
+			productReference = 18AAEB072C0747D200A28655 /* MangaADTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18AAEB102C0747D200A28655 /* MangaADUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AAEB212C0747D200A28655 /* Build configuration list for PBXNativeTarget "MangaADUITests" */;
+			buildPhases = (
+				17B47BC768EC32D737F6ACEE /* [CP] Check Pods Manifest.lock */,
+				18AAEB0D2C0747D200A28655 /* Sources */,
+				18AAEB0E2C0747D200A28655 /* Frameworks */,
+				18AAEB0F2C0747D200A28655 /* Resources */,
+				C79A6C75F2A178B635824C0A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18AAEB132C0747D200A28655 /* PBXTargetDependency */,
+			);
+			name = MangaADUITests;
+			productName = MangaADUITests;
+			productReference = 18AAEB112C0747D200A28655 /* MangaADUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18AAEAE92C0747CF00A28655 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					18AAEAF02C0747CF00A28655 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					18AAEB062C0747D200A28655 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 18AAEAF02C0747CF00A28655;
+					};
+					18AAEB102C0747D200A28655 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 18AAEAF02C0747CF00A28655;
+					};
+				};
+			};
+			buildConfigurationList = 18AAEAEC2C0747CF00A28655 /* Build configuration list for PBXProject "MangaAD" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18AAEAE82C0747CF00A28655;
+			productRefGroup = 18AAEAF22C0747CF00A28655 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18AAEAF02C0747CF00A28655 /* MangaAD */,
+				18AAEB062C0747D200A28655 /* MangaADTests */,
+				18AAEB102C0747D200A28655 /* MangaADUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18AAEAEF2C0747CF00A28655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DD503D2D64FE2700F21417 /* LaunchScreen.storyboard in Resources */,
+				18AAEAFE2C0747D100A28655 /* Assets.xcassets in Resources */,
+				187880F02C0B58E6006CCE6B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AAEB052C0747D200A28655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AAEB0F2C0747D200A28655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17B47BC768EC32D737F6ACEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangaAD-MangaADUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79A6C75F2A178B635824C0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangaAD-MangaADUITests/Pods-MangaAD-MangaADUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangaAD-MangaADUITests/Pods-MangaAD-MangaADUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MangaAD-MangaADUITests/Pods-MangaAD-MangaADUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAAA3D42B730882063A8E59C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangaAD/Pods-MangaAD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangaAD/Pods-MangaAD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MangaAD/Pods-MangaAD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F54FF075A9C8276703BD35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangaADTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F47B18070485462B2E03ACB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangaAD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18AAEAED2C0747CF00A28655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187880FF2C0B94BD006CCE6B /* ForgotPasswordViewController.swift in Sources */,
+				18151E962C148DE100BF0580 /* MangaDetailViewController.swift in Sources */,
+				18151EA42C14BE7E00BF0580 /* Category.swift in Sources */,
+				18AAEAF92C0747CF00A28655 /* ViewController.swift in Sources */,
+				18151EA22C14A53700BF0580 /* ChapterDetailViewController.swift in Sources */,
+				18151E9C2C14944900BF0580 /* CategoryViewController.swift in Sources */,
+				18151E9A2C14943E00BF0580 /* FavoriteViewController.swift in Sources */,
+				18F1ADD02C1B284200CB0140 /* RatingView.swift in Sources */,
+				18151E982C1493E000BF0580 /* TabBarViewController.swift in Sources */,
+				18D115972C161E7E0052C1EE /* PersonalInformationViewController.swift in Sources */,
+				18E682472C1868F600AC33D8 /* ChangePasswordViewController.swift in Sources */,
+				18151EA02C14A24A00BF0580 /* ChapterListViewController.swift in Sources */,
+				18151E9E2C14945500BF0580 /* ProfileViewController.swift in Sources */,
+				18F1ADCD2C1B210400CB0140 /* Rating.swift in Sources */,
+				18E69C992C2EDBF0006F5476 /* LaunchScreenViewController.swift in Sources */,
+				187881082C0BA2BF006CCE6B /* Chapter.swift in Sources */,
+				18F1ADD22C1B61A700CB0140 /* MangaReviewsViewController.swift in Sources */,
+				187881062C0B9905006CCE6B /* Manga.swift in Sources */,
+				187881042C0B980E006CCE6B /* MangaCollectionViewCell.swift in Sources */,
+				18AAEAF52C0747CF00A28655 /* AppDelegate.swift in Sources */,
+				187880FB2C0B5F0A006CCE6B /* RegisterViewController.swift in Sources */,
+				187880F92C0B5EDF006CCE6B /* LoginViewController.swift in Sources */,
+				18AAEAF72C0747CF00A28655 /* SceneDelegate.swift in Sources */,
+				18151EB62C14F4D300BF0580 /* Favorite.swift in Sources */,
+				187880FD2C0B7BF8006CCE6B /* User.swift in Sources */,
+				187881022C0B9802006CCE6B /* MangaCollectionViewController.swift in Sources */,
+				18151EB02C14DC7F00BF0580 /* FavoriteMangaCollectionViewController.swift in Sources */,
+				18151EB22C14DC8B00BF0580 /* FavoriteMangaCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AAEB032C0747D200A28655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AAEB0C2C0747D200A28655 /* MangaADTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AAEB0D2C0747D200A28655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AAEB182C0747D200A28655 /* MangaADUITestsLaunchTests.swift in Sources */,
+				18AAEB162C0747D200A28655 /* MangaADUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18AAEB092C0747D200A28655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18AAEAF02C0747CF00A28655 /* MangaAD */;
+			targetProxy = 18AAEB082C0747D200A28655 /* PBXContainerItemProxy */;
+		};
+		18AAEB132C0747D200A28655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18AAEAF02C0747CF00A28655 /* MangaAD */;
+			targetProxy = 18AAEB122C0747D200A28655 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18AAEB192C0747D200A28655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18AAEB1A2C0747D200A28655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18AAEB1C2C0747D200A28655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E12388589D084C47C40D81F /* Pods-MangaAD.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZNMTW9D4Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MangaAD/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADK.MangaAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18AAEB1D2C0747D200A28655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57296BF353607404B304386C /* Pods-MangaAD.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZNMTW9D4Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MangaAD/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADK.MangaAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18AAEB1F2C0747D200A28655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7A3D1B92457E00014A147D /* Pods-MangaADTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADK.MangaADTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MangaAD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MangaAD";
+			};
+			name = Debug;
+		};
+		18AAEB202C0747D200A28655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50542CE225F71B43B20A5491 /* Pods-MangaADTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADK.MangaADTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MangaAD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MangaAD";
+			};
+			name = Release;
+		};
+		18AAEB222C0747D200A28655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C81C8AF85B67B3E8A1DCAE /* Pods-MangaAD-MangaADUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADK.MangaADUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MangaAD;
+			};
+			name = Debug;
+		};
+		18AAEB232C0747D200A28655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12125FC75FF796FBFD6B1978 /* Pods-MangaAD-MangaADUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADK.MangaADUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MangaAD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18AAEAEC2C0747CF00A28655 /* Build configuration list for PBXProject "MangaAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AAEB192C0747D200A28655 /* Debug */,
+				18AAEB1A2C0747D200A28655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AAEB1B2C0747D200A28655 /* Build configuration list for PBXNativeTarget "MangaAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AAEB1C2C0747D200A28655 /* Debug */,
+				18AAEB1D2C0747D200A28655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AAEB1E2C0747D200A28655 /* Build configuration list for PBXNativeTarget "MangaADTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AAEB1F2C0747D200A28655 /* Debug */,
+				18AAEB202C0747D200A28655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AAEB212C0747D200A28655 /* Build configuration list for PBXNativeTarget "MangaADUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AAEB222C0747D200A28655 /* Debug */,
+				18AAEB232C0747D200A28655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18AAEAE92C0747CF00A28655 /* Project object */;
+}
